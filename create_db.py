@@ -1,4 +1,5 @@
-import sqlite3
+def main()
+    import sqlite3
 
 conn = sqlite3.connect("patients.db")
 cursor = conn.cursor()
@@ -20,7 +21,7 @@ CREATE TABLE patients (
 # Add sample patient (CHANGE TIME BEFORE TESTING)
 cursor.execute("""
 INSERT INTO patients (name, chat_id, medicine, time, emergency_chat_id)
-VALUES ('Ravi', '8395898873', 'BP Tablet', '23:12', '8395898873')
+VALUES ('Ravi', '8395898873', 'BP Tablet', '13:55', '8395898873')
 """)
 
 conn.commit()
